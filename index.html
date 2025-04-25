@@ -2,21 +2,25 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MK Pascal – Kommt bald</title>
 
   <!-- Open Graph Meta-Tags für Discord Embed -->
-  <meta property="og:title" content="MK Pascal – Kommt bald" />
-  <meta property="og:description" content="MK Pascal arbeitet an etwas Geilem – stay tuned!" />
-  <meta property="og:image" content="https://mkpascal.art/images/your-image.png" /> <!-- Ändere den Pfad zum Bild -->
+  <meta property="og:site_name" content="mkpascal.art" />
+  <meta property="og:title" content="🚀 Etwas Großes kommt – MK Pascal" />
+  <meta property="og:description" content="MK arbeitet an etwas Geilem – stay tuned!" />
+  <meta property="og:image" content="https://cdn.discordapp.com/attachments/1193501240408166510/1365116140358991912/Comp_1_00001.png" />
   <meta property="og:url" content="https://mkpascal.art/" />
   <meta property="og:type" content="website" />
 
-  <!-- Twitter Meta-Tags (für Twitter Cards, optional) -->
+  <!-- Twitter Meta-Tags -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="MK Pascal – Kommt bald" />
   <meta name="twitter:description" content="MK Pascal arbeitet an etwas Geilem – stay tuned!" />
-  <meta name="twitter:image" content="https://cdn.discordapp.com/attachments/1193501240408166510/1365091359890866248/Xnip2025-04-25_00-25-28.png?ex=680c0be6&is=680aba66&hm=65ccd4aa711cb90088fcc149d9652a4e851e829b5e89b185953d4d23c501bcae&" /> <!-- Ändere den Pfad zum Bild -->
+  <meta name="twitter:image" content="https://cdn.discordapp.com/attachments/1193501240408166510/1365116140358991912/Comp_1_00001.png" />
+
+  <!-- Favicon setzen (Emoji als Favicon) -->
+  <link rel="icon" href="https://twemoji.maxcdn.com/v/latest/72x72/1f622.png" type="image/png">
 
   <style>
     * {
@@ -51,10 +55,12 @@
 
     .socials {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-      gap: 20px; /* Abstand zwischen den Buttons */
+      gap: 20px;
       width: 100%;
       max-width: 600px;
+      margin-bottom: 60px;
     }
 
     .socials a {
@@ -71,35 +77,76 @@
 
     .socials a:hover {
       transform: scale(1.05);
-    }
-
-    .socials a:hover.yt {
       background: #505050;
     }
 
-    .socials a:hover.insta {
-        background: #505050;
+    .video-container {
+      width: 100%;
+      max-width: 800px;
+      margin-bottom: 40px;
     }
 
-    .socials a:hover.tiktok {
-        background: #505050;
+    iframe {
+      width: 100%;
+      height: 450px;
+      border: none;
+      border-radius: 12px;
     }
 
-    .socials a:hover.paypal {
-      background: #505050;
+    footer {
+      position: absolute;
+      bottom: 20px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #777;
+    }
+
+    .contact-link {
+      display: inline-block;
+      margin-top: 8px;
+      color: #aaa;
+      text-decoration: none;
+      font-size: 1em;
+      transition: color 0.3s ease;
+    }
+
+    .contact-link:hover {
+      color: #fff;
     }
 
     @media (max-width: 600px) {
       h1 {
         font-size: 2em;
       }
+
       .socials a {
         font-size: 0.9em;
         padding: 10px 16px;
       }
+
+      iframe {
+        height: 250px;
+      }
     }
   </style>
+
+  <script>
+    // Originaler Titel der Seite
+    const originalTitle = document.title;
+
+    // Event Listener für den Sichtbarkeitsstatus der Seite
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) {
+        // Wenn der Tab nicht sichtbar ist, Titel ändern
+        document.title = "😢 Komm zurück!";
+      } else {
+        // Wenn der Tab wieder sichtbar ist, Titel zurücksetzen
+        document.title = originalTitle;
+      }
+    });
+  </script>
 </head>
+
 <body>
   <h1>👋 Kommt bald</h1>
   <p>MK Pascal arbeitet an etwas Geilem – stay tuned!</p>
@@ -110,5 +157,15 @@
     <a class="tiktok" href="https://www.tiktok.com/@motorrad_king_pascal" target="_blank">TikTok</a>
     <a class="paypal" href="https://www.paypal.com/paypalme/motoPascal" target="_blank">PayPal</a>
   </div>
+
+  <!-- Video einbinden -->
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/Ta8mWJHhlMs" title="MK Pascal Video"></iframe>
+  </div>
+
+  <footer>
+    &copy; 2025 MK Pascal – All rights reserved<br/>
+    <a class="contact-link" href="mailto:contact@mkpascal.art">✉️ contact@mkpascal.art</a>
+  </footer>
 </body>
 </html>
