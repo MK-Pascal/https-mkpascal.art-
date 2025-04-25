@@ -1,0 +1,17 @@
+/* Farbkonfiguration */
+:root {
+  --primary-color: #122c4f; /* Midnight - für den Hintergrund der Hero-Section */
+  --secondary-color: #00FF00; /* Grün für das Logo */
+  --link-color: #5b88b2; /* Ocean - Blau für Links */
+  --text-color: #ffffff; /* Weiß für den Text */
+  --text-secondary-color: #b0b0b0; /* Hellgrau für den sekundären Text */
+  --bg-dark: #000000; /* Noir - Sehr dunkles Grau für den allgemeinen Hintergrund */
+  --bg-secondary-dark: #1a1a1a; /* Dunklerer Hintergrund für die Galerie */
+  --box-shadow: rgba(0, 0, 0, 0.2); /* Schattenfarbe */
+
+  /* Neue Farben */
+  --midnight-color: #122c4f; /* Midnight */
+  --pearl-perfect-color: #fbf9e4; /* Pearl Perfect */
+  --noir-color: #000000; /* Noir */
+  --ocean-color: #5b88b2; /* Ocean */
+}
